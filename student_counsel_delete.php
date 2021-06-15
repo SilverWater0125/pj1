@@ -10,7 +10,7 @@
      <h1> 상담 취소 </h1> 
 
       
-     <FORM METHOD="get" ACTION="student_counsel_delete_result.php"> 
+     <FORM METHOD="post" ACTION="student_counsel_delete_result.php"> 
          아이디 : <INPUT TYPE="text" NAME="아이디"> <BR><br>
 	신청한 상담을 취소하시겠습니까?<br><br>
          <INPUT TYPE="submit" VALUE="취소하기"> 
