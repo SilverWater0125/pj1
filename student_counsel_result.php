@@ -2,13 +2,13 @@
     $con=mysqli_connect("localhost", "root", "password", "학원관리시스템") or die("MySQL 접속 실패!"); 
  
  
-    $아이디 = $_POST["아이디"]; 
+    $학생아이디 = $_POST["학생아이디"]; 
     $학원전화번호= $_POST["학원이름"]; 
     $상담날짜 = $_POST["상담날짜"]; 
     $상담내용 = $_POST["상담내용"]; 
 
      
-      $sql =" INSERT INTO 관리 VALUES('".$아이디."','".$학원이름."',".$상담날짜; 
+      $sql =" INSERT INTO 관리 VALUES('".$학생아이디."','".$학원이름."',".$상담날짜; 
      $sql = $sql.",'".$상담내용."')"; 
    
     $ret = mysqli_query($con, $sql); 
