@@ -18,7 +18,7 @@
 	echo"<TABLE border=1>";
 	echo "<TR>";
 	echo "<TH>과목번호</TH><TH>학원이름</TH><TH>과목 이름</TH><TH>과목소개</TH>"; 
-	echo "<TH>선생님연락처</TH><TH>가격</TH><TH>교재</TH><TH>수업시간</TH><TH>정원</TH><TH>수강</TH><TH>취소</TH>"; 
+	echo "<TH>선생님번호</TH><TH>가격</TH><TH>교재</TH><TH>수업시간</TH><TH>정원</TH><TH>수강</TH><TH>취소</TH>"; 
    	echo "</TR>"; 
 
 	while($row= mysqli_fetch_array($ret)){
@@ -27,7 +27,7 @@
 		echo "<TD>", $row['학원이름'], "</TD>"; 
 	  	echo "<TD>", $row['과목이름'], "</TD>"; 
 	  	echo "<TD>", $row['과목소개'], "</TD>"; 
-		echo "<TD>",$row['선생님연락처'],"</TD>";
+		echo "<TD>",$row['선생님번호'],"</TD>";
 		echo "<TD>", $row['가격'], "</TD>"; 
 	  	echo "<TD>", $row['교재'], "</TD>"; 
 	  	echo "<TD>", $row['수업시간'], "</TD>"; 
