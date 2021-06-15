@@ -17,14 +17,14 @@
 	echo"<h1> 과목 조회 결과 </h1>";
 	echo"<TABLE border=1>";
 	echo "<TR>";
-	echo "<TH>과목번호</TH><TH>학원번호</TH><TH>과목 이름</TH><TH>과목소개</TH>"; 
+	echo "<TH>과목번호</TH><TH>학원이름</TH><TH>과목 이름</TH><TH>과목소개</TH>"; 
 	echo "<TH>선생님연락처</TH><TH>가격</TH><TH>교재</TH><TH>수업시간</TH><TH>정원</TH><TH>수강</TH><TH>취소</TH>"; 
    	echo "</TR>"; 
 
 	while($row= mysqli_fetch_array($ret)){
 		echo "<TR>";
 		echo "<TD>",$row['과목번호'],"</TD>";
-		echo "<TD>", $row['학원번호'], "</TD>"; 
+		echo "<TD>", $row['학원이름'], "</TD>"; 
 	  	echo "<TD>", $row['과목이름'], "</TD>"; 
 	  	echo "<TD>", $row['과목소개'], "</TD>"; 
 		echo "<TD>",$row['선생님연락처'],"</TD>";
@@ -40,7 +40,7 @@
 
 	mysqli_close($con);
 	echo "</TABLE>";  
-	echo "<br> <a href='Student.html'> <--초기 화면</a> "; 
+	echo "<br> <a href='student.html'> <--초기 화면</a> "; 
 ?> 
 
 
