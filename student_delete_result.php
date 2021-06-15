@@ -5,7 +5,7 @@
  
  
     $ret = mysqli_query($con, $sql);    
-    echo "<h1> 탈퇴하기 <h1>
+    echo "<h1> 탈퇴하기 </h1>";
     if($ret) { 
  	echo $userID. " 회원의 탈퇴가 완료되었습니다.";
  	   }		    
@@ -13,10 +13,10 @@
     else { 
  	   echo "탈퇴에 실패하였습니다"."<br>"; 
  	   echo "실패 원인 :".mysqli_error($con); 
- 	   exit(); 
+ 	  
     }    
     mysqli_close($close);
     
-    echo "<br><br> <a href = 'a href='student.html'>  <---초기화면으로 돌아가기<a/>";
+    echo "<br><br> <a href ='student.html'>  <---초기화면으로 돌아가기</a>";
       
 ?> 
