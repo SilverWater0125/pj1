@@ -10,7 +10,7 @@
      <h1>상담 신청</h1> 
      <FORM METHOD="post" ACTION="student_counsel_result.php"> 
          아이디 : <INPUT TYPE="text" NAME="학생아이디"><br> 
-         학원전화번호 : <INPUT TYPE="text" NAME="학원전화번호"><br>
+         학원이름 : <INPUT TYPE="text" NAME="학원이름"><br>
          상담날짜 : <INPUT TYPE="text" NAME="상담날짜"><br> 
         상담내용: <INPUT TYPE="text" NAME="상담내용"><br> 
         
