@@ -17,6 +17,6 @@
     }    
     mysqli_close($con);
     
-    echo "<br><br> <a href = 'a href='student.html'>  <---초기화면으로 돌아가기<a/>";
+    echo "<br><br> <a href = 'student.html'>  <---초기화면으로 돌아가기<a/>";
       
 ?> 
