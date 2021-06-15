@@ -18,7 +18,7 @@ else {
       exit();
 }
 $row= mysqli_fetch_array($ret);
-$아이디 = $row['아이디'];
+$학생아이디 = $row['아이디'];
 $과목번호 = $row["과목번호"];
 ?>
 
@@ -31,7 +31,7 @@ $과목번호 = $row["과목번호"];
  <body> 
      <h1>수강 신청</h1> 
      <FORM METHOD="post" ACTION="student_take_class_result.php"> 
-         학생아이디: <INPUT TYPE="text" NAME="아이디" VALUE=<?php echo $아이디 ?> READONLY> <br> 
+         학생아이디: <INPUT TYPE="text" NAME="아이디" VALUE=<?php echo $학생아이디 ?> READONLY> <br> 
          과목번호 : <INPUT TYPE="text" NAME="과목번호"VALUE=<?php echo $과목번호 ?> READONLY> <br> 
  
          <br><br> 
