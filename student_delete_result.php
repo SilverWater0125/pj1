@@ -5,7 +5,7 @@
     $ret = mysqli_query($con, $sql);    
      echo "<h1> 탈퇴하기 </h1>";
     if($ret) { 
- 	   echo $아이디. " 회원의 탈퇴가 완료되었습니다.";
+ 	   echo $아이디." 회원의 탈퇴가 완료되었습니다.";
  	   }		    
     
     else { 
