@@ -1,5 +1,19 @@
-<!DOCTYPE html> 
- <html lang="en"> 
+<?php
+ $con=mysqli_connect("localhost", "root", "password", "학원관리시스템") or die("MySQL 접속에 실패하셨습니다"); 
+ $sql = "SELECT * FROM 학생 WHERE 아이디='".$_GET['아이디']."'";
+
+ $ret= mysqli_query($con, $sql);
+if($ret){
+ $count = mysqli_num_rows($ret);
+    if($count==0) {
+        echo $_GET['아이디']." 아이디의 회원이 없습니다 "."<br>";
+        echo "<BR> <a href='student.html'>  <---뒤로가기</a> ";
+        exit();
+        }
+     }
+
+?>
+<html>
  <head>
      <meta charset="UTF-8"> 
      <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
