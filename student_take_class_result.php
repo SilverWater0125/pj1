@@ -2,10 +2,10 @@
     $con=mysqli_connect("localhost", "root", "password", "학원관리시스템") or die("MySQL 접속 실패!"); 
  
  
-    $아이디 = $_POST["아이디"]; 
+    $학생아이디 = $_POST["학생아이디"]; 
     $과목번호= $_POST["과목번호"]; 
    
-     $sql =" INSERT INTO 수강 VALUES('".$아이디."','".$과목번호."')"; 
+     $sql =" INSERT INTO 수강 VALUES('".$학생아이디."','".$과목번호."')"; 
     
    
     $ret = mysqli_query($con, $sql); 
