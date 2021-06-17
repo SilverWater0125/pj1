@@ -12,7 +12,7 @@
       
      <FORM METHOD="post" ACTION="student_drop_class_result.php"> 
          아이디 : <INPUT TYPE="text" NAME="아이디"> <BR><br>
-	수강을 취소하시겠습니까?<br><br>
+	 수강을 취소하시겠습니까?<br><br>
          <INPUT TYPE="submit" VALUE="취소하기"> 
      </FORM> 
  </body> 
